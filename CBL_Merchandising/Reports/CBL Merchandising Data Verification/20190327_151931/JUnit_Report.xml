@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CBL Merchandising Data Verification" time="137" tests="1" failures="0" errors="1">
+   <testsuite name="CBL Merchandising Data Verification" tests="1" failures="0" errors="1" time="137" timestamp="2019-03-27 15:19:34" hostname="Fahad Shah - DESKTOP-L12UUAD" id="Test Suites/CBL Merchandising Data Verification">
+      <properties>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_151931"/>
+         <property name="logFiles" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_151931\\appium.log, F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_151931\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Fahad Shah - DESKTOP-L12UUAD"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.8.1"/>
+         <property name="deviceModel" value="SM-J110H"/>
+         <property name="hostAddress" value="192.168.3.221"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="11016e423244a24a"/>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="deviceOSVersion" value="4.4.4"/>
+      </properties>
+      <testcase name="Test Cases/LaunchingApp/LaunchApp" classname="Test Cases/LaunchingApp/LaunchApp" status="PASSED">
+         <system-out><![CDATA[2019-03-27 15:19:34 - [TEST_CASE][PASSED] - Test Cases/LaunchingApp/LaunchApp: Test Cases/LaunchingApp/LaunchApp
+
+2019-03-27 15:19:35 - [TEST_STEP][PASSED] - startApplication("F:\QA_Automation\Builds\cbl_live_v1_130319.apk", false): Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:19:35 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2019-03-27 15:19:40 - [MESSAGE][INFO] - Appium server started on port 52,491
+
+2019-03-27 15:19:57 - [MESSAGE][PASSED] - Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:19:57 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-03-27 15:20:02 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" classname="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" status="ERROR">
+         <error type="ERROR" message="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+"/>
+         <system-out><![CDATA[2019-03-27 15:20:02 - [TEST_CASE][ERROR] - Test Cases/VisitShopScenarios/VisitShopsWithDataVerification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+
+
+2019-03-27 15:20:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("DashboardScreenElements/Validate_DashboardScreen", ["package":PACKAGENAME]), "Dashboard"): Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:20:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:20:15 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday(): com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:20:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:16 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/DaysDropdownMenu'
+
+2019-03-27 15:20:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:17 - [MESSAGE][PASSED] - Element 'Object Repository/DashboardScreenElements/Validate_DaysListScreen' is exist
+
+2019-03-27 15:20:18 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:20:18 - [TEST_STEP][PASSED] - tap(findTestObject("DashboardScreenElements/StartYourDay", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:20:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:20:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Validate_ShopListScreen", ["package":PACKAGENAME]), "Shops on Route"): Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:20:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:20:21 - [TEST_STEP][ERROR] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(): com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification() FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+
+
+2019-03-27 15:20:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopOptionsScreen' are matched.
+
+2019-03-27 15:20:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:28 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/StartWorking'
+
+2019-03-27 15:20:43 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+2019-03-27 15:20:44 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_MapScreen' is exist
+
+2019-03-27 15:20:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Location_CheckIn'
+
+2019-03-27 15:20:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:46 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_InfoPopUP' is exist
+
+2019-03-27 15:20:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:47 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/InfoPopUp_YesButton'
+
+2019-03-27 15:20:47 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/VisitShopOpen: Test Cases/ShopOpen/VisitShopOpen
+
+2019-03-27 15:20:47 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopActions_List", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:20:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:47 - [MESSAGE][PASSED] - Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:20:47 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/ShopOpen", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:20:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:20:50 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture(): com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:20:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:50 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:20:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:54 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:20:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:20:57 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:21:02 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:21:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:21:02 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:21:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/VisitShopOpen' successfully
+
+2019-03-27 15:21:02 - [TEST_CASE][ERROR] - Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification: Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+
+
+2019-03-27 15:21:03 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopOpen/Validate_ShopCategoriesListScreen", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:21:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:05 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:21:05 - [TEST_STEP][ERROR] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(): com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification() FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+
+
+2019-03-27 15:21:08 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:21:08 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:21:10 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/HotZone/VisitHotZone: Test Cases/ShopOpen/HotZone/VisitHotZone
+
+2019-03-27 15:21:11 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:13 - [TEST_STEP][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions(): com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:21:14 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:21:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:17 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:20 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:21:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:21:29 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:21:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:29 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:21:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:21:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:34 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:21:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:38 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:21:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:41 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:21:46 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:21:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:47 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:21:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:48 - [MESSAGE][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:21:48 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/PlanogramButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:21:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:48 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:21:48 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton(): com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:21:50 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:21:50 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:21:51 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/SubmitButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:21:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:21:51 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:21:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/HotZone/VisitHotZone' successfully
+
+2019-03-27 15:21:51 - [MESSAGE][ERROR] - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+
+2019-03-27 15:21:51 - [MESSAGE][ERROR] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification() FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)
+
+
+2019-03-27 15:21:51 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification' failed because of error(s))
+
+2019-03-27 15:21:51 - [MESSAGE][ERROR] - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+
+2019-03-27 15:21:51 - [MESSAGE][ERROR] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification() FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)]]></system-out>
+         <system-err><![CDATA[2019-03-27 15:20:02 - [TEST_CASE][ERROR] - Test Cases/VisitShopScenarios/VisitShopsWithDataVerification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-03-27 15:19:34 - [TEST_SUITE][ERROR] - CBL Merchandising Data Verification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-03-27 15:19:34 - [TEST_SUITE][ERROR] - CBL Merchandising Data Verification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-L12UUAD', ip: '192.168.3.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {app: F:\QA_Automation\Builds\cbl..., appActivity: com.audit.main.ui.SplashScreen, appPackage: com.concavetech.bloc, appWaitActivity: com.audit.main.ui.SplashScreen, appWaitPackage: com.concavetech.bloc, autoGrantPermissions: true, databaseEnabled: false, desired: {app: F:\QA_Automation\Builds\cbl..., autoGrantPermissions: true, deviceId: , deviceName: samsung SM-J110H (Android 4..., fullReset: false, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: Android, udid: 11016e423244a24a}, deviceId: , deviceManufacturer: samsung, deviceModel: SM-J110H, deviceName: 11016e423244a24a, deviceScreenSize: 480x800, deviceUDID: 11016e423244a24a, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, noReset: true, platform: ANDROID, platformName: ANDROID, platformVersion: 4.4.4, takesScreenshot: true, udid: 11016e423244a24a, warnings: {}, webStorageEnabled: false}
+Session ID: cea687a2-5b20-4bf9-8f26-28b7a4b0eeb1
+*** Element info: {Using=xpath, value=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElement(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.findElementByXPath(SwipeableAndroidDriver.java:1)
+	at io.appium.java_client.MobileDriver$findElementByXPath.call(Unknown Source)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:84)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553681971553.run(TempTestSuite1553681971553.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

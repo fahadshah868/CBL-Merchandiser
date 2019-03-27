@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CBL Merchandising Data Verification" time="190" tests="1" failures="1" errors="0">
+   <testsuite name="CBL Merchandising Data Verification" tests="1" failures="1" errors="0" time="190" timestamp="2019-03-27 15:23:26" hostname="Fahad Shah - DESKTOP-L12UUAD" id="Test Suites/CBL Merchandising Data Verification">
+      <properties>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323"/>
+         <property name="logFiles" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\appium.log, F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\execution0.log"/>
+         <property name="attachments" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\1553682394024.png, F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\1553682395163.png"/>
+         <property name="hostName" value="Fahad Shah - DESKTOP-L12UUAD"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.8.1"/>
+         <property name="deviceModel" value="SM-J110H"/>
+         <property name="hostAddress" value="192.168.3.221"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="11016e423244a24a"/>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="deviceOSVersion" value="4.4.4"/>
+      </properties>
+      <testcase name="Test Cases/LaunchingApp/LaunchApp" classname="Test Cases/LaunchingApp/LaunchApp" status="PASSED">
+         <system-out><![CDATA[2019-03-27 15:23:26 - [TEST_CASE][PASSED] - Test Cases/LaunchingApp/LaunchApp: Test Cases/LaunchingApp/LaunchApp
+
+2019-03-27 15:23:27 - [TEST_STEP][PASSED] - startApplication("F:\QA_Automation\Builds\cbl_live_v1_130319.apk", false): Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:23:27 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2019-03-27 15:23:32 - [MESSAGE][INFO] - Appium server started on port 52,699
+
+2019-03-27 15:23:45 - [MESSAGE][PASSED] - Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:23:45 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-03-27 15:23:50 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" classname="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" status="FAILED">
+         <failure type="FAILED" message="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+"/>
+         <system-out><![CDATA[2019-03-27 15:23:50 - [TEST_CASE][FAILED] - Test Cases/VisitShopScenarios/VisitShopsWithDataVerification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:23:50 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("DashboardScreenElements/Validate_DashboardScreen", ["package":PACKAGENAME]), "Dashboard"): Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:23:54 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:23:54 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday(): com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:23:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:23:55 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/DaysDropdownMenu'
+
+2019-03-27 15:23:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:23:56 - [MESSAGE][PASSED] - Element 'Object Repository/DashboardScreenElements/Validate_DaysListScreen' is exist
+
+2019-03-27 15:23:57 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:23:57 - [TEST_STEP][PASSED] - tap(findTestObject("DashboardScreenElements/StartYourDay", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:23:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:23:58 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:23:58 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Validate_ShopListScreen", ["package":PACKAGENAME]), "Shops on Route"): Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:24:01 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:24:01 - [TEST_STEP][FAILED] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(): com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification() FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:24:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopOptionsScreen' are matched.
+
+2019-03-27 15:24:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:08 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/StartWorking'
+
+2019-03-27 15:24:23 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+2019-03-27 15:24:23 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_MapScreen' is exist
+
+2019-03-27 15:24:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Location_CheckIn'
+
+2019-03-27 15:24:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:25 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_InfoPopUP' is exist
+
+2019-03-27 15:24:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:26 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/InfoPopUp_YesButton'
+
+2019-03-27 15:24:26 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/VisitShopOpen: Test Cases/ShopOpen/VisitShopOpen
+
+2019-03-27 15:24:26 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopActions_List", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:24:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:27 - [MESSAGE][PASSED] - Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:24:27 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/ShopOpen", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:24:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:28 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:24:28 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture(): com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:24:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:29 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:24:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:33 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:24:33 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:36 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:24:41 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:24:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:41 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:24:41 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:24:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/VisitShopOpen' successfully
+
+2019-03-27 15:24:41 - [TEST_CASE][FAILED] - Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification: Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:24:42 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopOpen/Validate_ShopCategoriesListScreen", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:24:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:44 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:24:44 - [TEST_STEP][FAILED] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(): com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification() FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:24:47 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:24:47 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:24:50 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/HotZone/VisitHotZone: Test Cases/ShopOpen/HotZone/VisitHotZone
+
+2019-03-27 15:24:50 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:24:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:24:51 - [TEST_STEP][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions(): com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:24:53 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:24:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:55 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:24:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:24:58 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:24:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:25:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:25:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:07 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:25:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:25:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:25:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:12 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:25:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:25:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:25:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:25:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:25:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:25:25 - [MESSAGE][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:25:25 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/PlanogramButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:25:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:26 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:25:26 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton(): com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:25:28 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:25:28 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:25:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:25:29 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/SubmitButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:25:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:29 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:25:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/HotZone/VisitHotZone' successfully
+
+2019-03-27 15:25:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:31 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:25:31 - [TEST_CASE][FAILED] - Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay: Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:25:31 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen", ["package":PACKAGENAME]), "Secondary Display"): Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:25:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:25:33 - [TEST_STEP][PASSED] - com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions(): com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions is PASSED
+
+2019-03-27 15:25:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:25:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:37 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:25:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:40 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:25:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:43 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:25:48 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:25:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:49 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:25:50 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:25:52 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:25:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:54 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:25:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:25:57 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:25:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:00 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:26:05 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:26:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:06 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:26:07 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:26:09 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:26:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:12 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:26:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:26:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:18 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:26:23 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:26:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:26:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:26:25 - [MESSAGE][PASSED] - com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions is PASSED
+
+2019-03-27 15:26:25 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/PlanogramButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:26:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:26:26 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:26:26 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton(): com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:26:28 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:26:28 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen"), "Secondary Display"): verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen"), "Secondary Display") FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:26:35 - [MESSAGE][FAILED] - Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found
+[[ATTACHMENT|F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\1553682394024.png]]
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+[[ATTACHMENT|F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152323\\1553682395163.png]]
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen"), "Secondary Display") FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay' failed)
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification() FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)
+
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification' failed)
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+
+2019-03-27 15:26:36 - [MESSAGE][FAILED] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification() FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)]]></system-out>
+         <system-err><![CDATA[2019-03-27 15:23:50 - [TEST_CASE][FAILED] - Test Cases/VisitShopScenarios/VisitShopsWithDataVerification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-03-27 15:23:26 - [TEST_SUITE][FAILED] - CBL Merchandising Data Verification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-03-27 15:23:26 - [TEST_SUITE][FAILED] - CBL Merchandising Data Verification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:39)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementText(MobileBuiltInKeywords.groovy:1767)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementText$0.call(Unknown Source)
+	at VisitSecondaryDisplay.run(VisitSecondaryDisplay:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(CategoryVisitingScenariosKeywords.groovy:111)
+	at com.ct.qa.keywords.CategoryVisitingScenariosKeywords.invokeMethod(CategoryVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopCategoriesWithDataVerification.run(VisitShopCategoriesWithDataVerification:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:106)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:54)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:80)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(ShopVisitingScenariosKeywords.groovy:114)
+	at com.ct.qa.keywords.ShopVisitingScenariosKeywords.invokeMethod(ShopVisitingScenariosKeywords.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:49)
+	at VisitShopsWithDataVerification.run(VisitShopsWithDataVerification:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553682203335.run(TempTestSuite1553682203335.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

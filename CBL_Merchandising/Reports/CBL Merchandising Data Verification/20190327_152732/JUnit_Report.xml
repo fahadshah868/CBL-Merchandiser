@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CBL Merchandising Data Verification" time="196" tests="2" failures="0" errors="0">
+   <testsuite name="CBL Merchandising Data Verification" tests="2" failures="0" errors="0" time="196" timestamp="2019-03-27 15:27:34" hostname="Fahad Shah - DESKTOP-L12UUAD" id="Test Suites/CBL Merchandising Data Verification">
+      <properties>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152732"/>
+         <property name="logFiles" value="F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152732\\appium.log, F:\\Git Projects\\CBL_Merchandising\\Reports\\CBL Merchandising Data Verification\\20190327_152732\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Fahad Shah - DESKTOP-L12UUAD"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.8.1"/>
+         <property name="deviceModel" value="SM-J110H"/>
+         <property name="hostAddress" value="192.168.3.221"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="11016e423244a24a"/>
+         <property name="deviceName" value="samsung SM-J110H (Android 4.4.4)"/>
+         <property name="deviceOSVersion" value="4.4.4"/>
+      </properties>
+      <testcase name="Test Cases/LaunchingApp/LaunchApp" classname="Test Cases/LaunchingApp/LaunchApp" status="PASSED">
+         <system-out><![CDATA[2019-03-27 15:27:35 - [TEST_CASE][PASSED] - Test Cases/LaunchingApp/LaunchApp: Test Cases/LaunchingApp/LaunchApp
+
+2019-03-27 15:27:36 - [TEST_STEP][PASSED] - startApplication("F:\QA_Automation\Builds\cbl_live_v1_130319.apk", false): Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:27:36 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2019-03-27 15:27:41 - [MESSAGE][INFO] - Appium server started on port 52,956
+
+2019-03-27 15:27:54 - [MESSAGE][PASSED] - Started app at: 'F:\QA_Automation\Builds\cbl_live_v1_130319.apk'
+
+2019-03-27 15:27:54 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-03-27 15:27:59 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" classname="Test Cases/VisitShopScenarios/VisitShopsWithDataVerification" status="PASSED">
+         <system-out><![CDATA[2019-03-27 15:27:59 - [TEST_CASE][PASSED] - Test Cases/VisitShopScenarios/VisitShopsWithDataVerification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification
+
+2019-03-27 15:28:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("DashboardScreenElements/Validate_DashboardScreen", ["package":PACKAGENAME]), "Dashboard"): Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:28:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/DashboardScreenElements/Validate_DashboardScreen' are matched.
+
+2019-03-27 15:28:08 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday(): com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:28:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:09 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/DaysDropdownMenu'
+
+2019-03-27 15:28:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:10 - [MESSAGE][PASSED] - Element 'Object Repository/DashboardScreenElements/Validate_DaysListScreen' is exist
+
+2019-03-27 15:28:11 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.selectday is PASSED
+
+2019-03-27 15:28:11 - [TEST_STEP][PASSED] - tap(findTestObject("DashboardScreenElements/StartYourDay", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:28:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:12 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/DashboardScreenElements/StartYourDay'
+
+2019-03-27 15:28:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Validate_ShopListScreen", ["package":PACKAGENAME]), "Shops on Route"): Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:28:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:28:15 - [TEST_STEP][PASSED] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification(): com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification is PASSED
+
+2019-03-27 15:28:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopOptionsScreen' are matched.
+
+2019-03-27 15:28:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/StartWorking'
+
+2019-03-27 15:28:37 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+2019-03-27 15:28:37 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_MapScreen' is exist
+
+2019-03-27 15:28:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:38 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Location_CheckIn'
+
+2019-03-27 15:28:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:39 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_InfoPopUP' is exist
+
+2019-03-27 15:28:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:40 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/InfoPopUp_YesButton'
+
+2019-03-27 15:28:40 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/VisitShopOpen: Test Cases/ShopOpen/VisitShopOpen
+
+2019-03-27 15:28:41 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopActions_List", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:28:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:41 - [MESSAGE][PASSED] - Element 'Object Repository/ShopActions_List' is exist
+
+2019-03-27 15:28:41 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/ShopOpen", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:28:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:43 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/ShopOpen'
+
+2019-03-27 15:28:43 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture(): com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:28:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:44 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:28:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:47 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:28:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:28:55 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:28:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:56 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:28:56 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.takePicture is PASSED
+
+2019-03-27 15:28:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/VisitShopOpen' successfully
+
+2019-03-27 15:28:56 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification: Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification
+
+2019-03-27 15:28:56 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("ShopOpen/Validate_ShopCategoriesListScreen", ["package":PACKAGENAME]), 0): Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:28:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:28:58 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:28:58 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification(): com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification is PASSED
+
+2019-03-27 15:29:02 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:29:02 - [MESSAGE][PASSED] - Swiped from 0,200 to 0,750
+
+2019-03-27 15:29:04 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/HotZone/VisitHotZone: Test Cases/ShopOpen/HotZone/VisitHotZone
+
+2019-03-27 15:29:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:06 - [TEST_STEP][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions(): com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:29:07 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:29:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:10 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:29:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:13 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:29:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:16 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:29:21 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:29:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:29:23 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:29:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:27 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:29:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:30 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:29:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:34 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:29:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:29:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:39 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:29:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:41 - [MESSAGE][PASSED] - com.ct.qa.keywords.HotZoneKeywords.visitHotZoneQuestions is PASSED
+
+2019-03-27 15:29:41 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/PlanogramButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:29:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:41 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:29:41 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton(): com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:29:43 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:29:43 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/HotZone/Validate_HotZoneScreen", ["package":PACKAGENAME]), "Hot Zone"): Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:44 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/HotZone/Validate_HotZoneScreen' are matched.
+
+2019-03-27 15:29:44 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/SubmitButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:29:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:44 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:29:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/HotZone/VisitHotZone' successfully
+
+2019-03-27 15:29:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:46 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:29:46 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay: Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay
+
+2019-03-27 15:29:47 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen", ["package":PACKAGENAME]), "Secondary Display"): Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:29:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:29:48 - [TEST_STEP][PASSED] - com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions(): com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions is PASSED
+
+2019-03-27 15:29:49 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:29:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:52 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:29:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:55 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:29:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:29:58 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:30:03 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:30:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:04 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:30:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:30:07 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:30:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:10 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:30:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:13 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:30:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:16 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:30:21 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:30:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:30:23 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:30:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_QuestionOptionsPopup' are matched.
+
+2019-03-27 15:30:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:28 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_CameraScreen' is exist
+
+2019-03-27 15:30:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:31 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_flashButton'
+
+2019-03-27 15:30:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:35 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_TakePictureButton'
+
+2019-03-27 15:30:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-03-27 15:30:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:40 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/Camera_DoneButton'
+
+2019-03-27 15:30:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:30:42 - [MESSAGE][PASSED] - com.ct.qa.keywords.SecondaryDisplayKeywords.visitSecondaryDisplayQuestions is PASSED
+
+2019-03-27 15:30:42 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/PlanogramButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:30:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:42 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/PlanogramButton'
+
+2019-03-27 15:30:42 - [TEST_STEP][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton(): com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:30:44 - [MESSAGE][PASSED] - com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton is PASSED
+
+2019-03-27 15:30:44 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen", ["package":PACKAGENAME]), "Secondary Display"): Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:30:45 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen' are matched.
+
+2019-03-27 15:30:45 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/HotZone/SubmitButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:30:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/HotZone/SubmitButton'
+
+2019-03-27 15:30:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay' successfully
+
+2019-03-27 15:30:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:47 - [MESSAGE][PASSED] - Element 'Object Repository/ShopOpen/Validate_ShopCategoriesListScreen' is exist
+
+2019-03-27 15:30:47 - [MESSAGE][PASSED] - com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithDataVerification is PASSED
+
+2019-03-27 15:30:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithDataVerification' successfully
+
+2019-03-27 15:30:47 - [TEST_CASE][PASSED] - Test Cases/ShopOpen/SaveShop: Test Cases/ShopOpen/SaveShop
+
+2019-03-27 15:30:47 - [TEST_STEP][PASSED] - tap(findTestObject("ShopOpen/SubmitButtonToSaveShop", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/ShopOpen/SubmitButtonToSaveShop'
+
+2019-03-27 15:30:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:48 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ShopOpen/SubmitButtonToSaveShop'
+
+2019-03-27 15:30:48 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("CommonScreenElements/Validate_InfoPopUP", ["package":PACKAGENAME]), 0): Element 'Object Repository/CommonScreenElements/Validate_InfoPopUP' is exist
+
+2019-03-27 15:30:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:49 - [MESSAGE][PASSED] - Element 'Object Repository/CommonScreenElements/Validate_InfoPopUP' is exist
+
+2019-03-27 15:30:49 - [TEST_STEP][PASSED] - tap(findTestObject("CommonScreenElements/InfoPopUp_YesButton", ["package":PACKAGENAME]), 0): Tapped on element 'Object Repository/CommonScreenElements/InfoPopUp_YesButton'
+
+2019-03-27 15:30:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/CommonScreenElements/InfoPopUp_YesButton'
+
+2019-03-27 15:30:50 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Validate_ShopListScreen", ["package":PACKAGENAME]), "Shops on Route"): Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:30:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Validate_ShopListScreen' are matched.
+
+2019-03-27 15:30:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ShopOpen/SaveShop' successfully
+
+2019-03-27 15:30:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2019-03-27 15:30:51 - [MESSAGE][PASSED] - Element 'Object Repository/Validate_ShopListScreen' is exist
+
+2019-03-27 15:30:51 - [MESSAGE][INFO] - 
+
+
+---------------------------------------------Visited Shop Data-----------------------------------------------------------------------------------------------------
+
+<-------------------------------------------------------------------------------------------------------------------------------------->
+
+Shop Name: Al Madina General Store                                     Channel: General Store                                      
+
+Shop Visiting Scenarios:                Shop Open                                                                                           
+
+Main Category:                Hot Zone                                                                                                                          
+
+Question Category:                                                                                                                                              
+Question:                                         Selected Option          Picture Remark           Overwrite                Overwrite                
+                                                                                                    Selected Option          Picture Remark           
+Was Hot Zone maintained?                          Yes                      Y                        null                     null                     
+Take Hotzone Post Picture                         Take Picture             Y                        null                     null                     
+
+
+Main Category:                Secondary Display                                                                                                                 
+
+Question Category:                                                                                                                                              
+Question:                                         Selected Option          Picture Remark           Overwrite                Overwrite                
+                                                                                                    Selected Option          Picture Remark           
+Secondary Shelf Available?                        Yes                      Y                        null                     null                     
+Secondary Shelf maintained?                       Yes                      Y                        null                     null                     
+Take Post Secondary Picture                       Take Picture             Y                        null                     null                     
+
+
+<-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+2019-03-27 15:30:51 - [MESSAGE][PASSED] - com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopWith_DataVerification is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-03-27 15:27:34 - [TEST_SUITE][PASSED] - CBL Merchandising Data Verification: Test Cases/VisitShopScenarios/VisitShopsWithDataVerification]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
