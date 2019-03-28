@@ -43,7 +43,7 @@ import WebUiBuiltInKeywords as WebUI
 public class ProjectConstants {
 
 	//variables for excel file and sheets
-	public static final String EXCEL_FILEPATH = "F:\\Git Projects\\CBL_Merchandising\\CBL_Merchandising.xlsx"
+	public static final String EXCEL_FILEPATH = "F:\\Git Projects\\CBL-Merchandiser\\CBL_Merchandising\\CBL_Merchandising.xlsx"
 	public static final String TPOSMTYPES_SHEET = "Tposm Types"
 	public static final String TPOSMDEPLOYMENT_SHEET = "Tposm Deployment"
 	public static final String BRANDSPRODUCTS_SHEET = "Brands Products"
@@ -64,7 +64,7 @@ public class ProjectConstants {
 	public static final String MESSAGEFOR_ITEMSARE_NOTMATCH = "above items are display on device not match with expected items..."
 
 	//package name for elements
-	public static final String PACKAGENAME = "com.concavetech.bloc"
+	public static final String PACKAGENAME = "com.concavetech.cbl"
 
 	//variables for excel sheet columns index
 	//tposm types columns

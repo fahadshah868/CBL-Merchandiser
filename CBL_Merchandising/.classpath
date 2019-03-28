@@ -105,8 +105,8 @@
 	<classpathentry kind="lib" path="F:/QA_Automation/Softwares/Katalon_Studio_Windows_64-5.10.0/plugins/wsdl4j_1.6.2.jar"/>
 	<classpathentry kind="lib" path="F:/QA_Automation/Softwares/Katalon_Studio_Windows_64-5.10.0/plugins/com.google.oauth-client.google-oauth-client_1.22.0.jar"/>
 	<classpathentry kind="lib" path="F:/QA_Automation/Softwares/Katalon_Studio_Windows_64-5.10.0/plugins/com.google.http-client.google-http-client_1.22.0.jar"/>
-	<classpathentry kind="lib" path="F:/Git Projects/CBL_Merchandising/Drivers/ashot-1.5.3.jar"/>
-	<classpathentry kind="lib" path="F:/Git Projects/CBL_Merchandising/Drivers/java-client-7.0.0.jar"/>
+	<classpathentry kind="lib" path="F:/Git Projects/CBL-Merchandiser/CBL_Merchandising/Drivers/ashot-1.5.3.jar"/>
+	<classpathentry kind="lib" path="F:/Git Projects/CBL-Merchandiser/CBL_Merchandising/Drivers/java-client-7.0.0.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

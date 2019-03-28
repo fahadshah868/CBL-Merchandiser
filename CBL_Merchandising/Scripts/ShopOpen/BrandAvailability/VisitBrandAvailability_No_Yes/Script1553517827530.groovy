@@ -22,6 +22,8 @@ Mobile.tap(findTestObject('ShopOpen/BrandAvailability/Availability', [('package'
 Mobile.verifyElementText(findTestObject('ShopOpen/BrandAvailability/Validate_BrandAvailbility_BrandsScreen', [('package') : ProjectConstants.PACKAGENAME]), 
     'Category:Brand Availability')
 
+CustomKeywords.'com.ct.qa.keywords.CommonKeywords.visitPlanogramImageViewButton'()
+
 CustomKeywords.'com.ct.qa.keywords.BrandAvailability.validateBrands'()
 
 CustomKeywords.'com.ct.qa.keywords.BrandAvailability.visitBrands'(1)

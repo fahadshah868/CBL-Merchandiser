@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and @instance = '2' and (text() = 'TPSOM TYPE' or . = 'TPSOM TYPE') and @resource-id = '${package}:id/title']</value>
+         <value>//*[@class = 'android.widget.TextView' and @instance = '2' and (text() = 'TPOSM TYPE' or . = 'TPOSM TYPE') and @resource-id = '${package}:id/title']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>TPSOM TYPE</value>
+      <value>TPOSM TYPE</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

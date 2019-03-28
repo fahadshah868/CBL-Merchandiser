@@ -26,6 +26,10 @@ def static "com.ct.qa.keywords.ShopVisitingScenariosKeywords.visitShopsWith_Cate
     (new com.ct.qa.keywords.ShopVisitingScenariosKeywords()).visitShopsWith_CategoryLevel_OverwriteScenarios()
 }
 
+def static "com.ct.qa.keywords.DisplayReportKeywords.displayDataInReport"() {
+    (new com.ct.qa.keywords.DisplayReportKeywords()).displayDataInReport()
+}
+
 def static "com.ct.qa.keywords.CommonKeywords.selectday"() {
     (new com.ct.qa.keywords.CommonKeywords()).selectday()
 }
@@ -52,14 +56,6 @@ def static "com.ct.qa.keywords.CommonKeywords.visitPrimaryShelfPlanogramImageVie
 
 def static "com.ct.qa.keywords.CommonKeywords.takePicture"() {
     (new com.ct.qa.keywords.CommonKeywords()).takePicture()
-}
-
-def static "com.ct.qa.keywords.CommonKeywords.visitSKDNA_ForChannel"() {
-    (new com.ct.qa.keywords.CommonKeywords()).visitSKDNA_ForChannel()
-}
-
-def static "com.ct.qa.keywords.DisplayReportKeywords.displayDataInReport"() {
-    (new com.ct.qa.keywords.DisplayReportKeywords()).displayDataInReport()
 }
 
 def static "com.ct.qa.keywords.PrimaryShelfKeywords.visitPrimaryShelf"() {

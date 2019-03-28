@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-CBL Merchandising Data Verification,,,2019-03-27 18:30:28,2019-03-27 18:30:37,8.683s,FAILED
-,,,,,,
-Test Cases/LaunchingApp/LaunchApp,,,2019-03-27 18:30:29,2019-03-27 18:30:36,7.358s,FAILED
-"startApplication(""F:\QA_Automation\Builds\cbl_live_v1_130319.apk"", false)",,launch application,2019-03-27 18:30:30,2019-03-27 18:30:36,6.489s,FAILED
-,,,,,,
-Test Cases/VisitShopScenarios/VisitShopsWithDataVerification,,,2019-03-27 18:30:36,2019-03-27 18:30:37,0.929s,FAILED
-"verifyElementText(findTestObject(""DashboardScreenElements/Validate_DashboardScreen"", [""package"":PACKAGENAME]), ""Dashboard"")",,validate the dashboard screen appearance,2019-03-27 18:30:37,2019-03-27 18:30:37,0.090s,FAILED

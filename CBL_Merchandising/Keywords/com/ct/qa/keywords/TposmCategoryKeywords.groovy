@@ -29,7 +29,8 @@ public class TposmCategoryKeywords {
 
 	@Keyword
 	def validateBrands(){
-		ArrayList<String> expectedbrands = LoadDataKeywords.loadTposmDeploymentList("brand","")
+		ArrayList<String> brands = LoadDataKeywords.loadTposmDeploymentList("brand","")
+		ArrayList<String> expectedbrands = new HashSet<String>(brands)
 		ArrayList<String> displayedbrands = new ArrayList<String>()
 		int index
 		int totalbrands = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
@@ -106,10 +107,10 @@ public class TposmCategoryKeywords {
 			String brandtext = brand.getText()
 			ProjectConstants.CURRENTVISITING_SUBCATEGORY = brandtext
 			brand.click()
-			Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+			Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 			validateAndVisitTposmTypes(brandtext)
 			Mobile.tap(findTestObject("Object Repository/ShopOpen/TposmDeployment/ProceedButton", [('package') : ProjectConstants.PACKAGENAME]), 0)
-			Mobile.verifyElementText(findTestObject('ShopOpen/TposmDeployment/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPSOM CATEGORY')
+			Mobile.verifyElementText(findTestObject('ShopOpen/TposmDeployment/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPOSM CATEGORY')
 		}
 		while(true){
 			index = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
@@ -125,23 +126,26 @@ public class TposmCategoryKeywords {
 			else{
 				ProjectConstants.CURRENTVISITING_SUBCATEGORY = itemtextafterswipe
 				itemafterswipe.click()
-				Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+				Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 				validateAndVisitTposmTypes(itemtextafterswipe)
 				Mobile.tap(findTestObject("Object Repository/ShopOpen/TposmDeployment/ProceedButton", [('package') : ProjectConstants.PACKAGENAME]), 0)
-				Mobile.verifyElementText(findTestObject('ShopOpen/TposmDeployment/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPSOM CATEGORY')
+				Mobile.verifyElementText(findTestObject('ShopOpen/TposmDeployment/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPOSM CATEGORY')
 			}
 		}
 	}
 	def validateAndVisitTposmTypes(String displayedbrand){
 		String remark
 		String remark_value
+		//expected brands with tposm types
 		TposmBrand expectedtposmbrand = LoadDataKeywords.loadTposmDeploymentList("all", displayedbrand)
 		ArrayList<TposmDeployment> expectedtposmdeployments
+		//visited brand with tposm types
 		TposmBrand visitedtposmbrand = new TposmBrand()
 		ArrayList<TposmDeployment> visitedtposm = new ArrayList<TposmDeployment>()
+		//filtered types from each brand
 		ArrayList<String> displayedtypes = new ArrayList<String>()
-		int totaltypes = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 		//count all tposm types
+		int totaltypes = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 		for(int i=1; i<= totaltypes; i++){
 			TposmDeployment _tposmdeployment = new TposmDeployment()
 			MobileElement type = ProjectConstants.DRIVER.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+i+"]/android.widget.TextView[1]")
@@ -149,17 +153,17 @@ public class TposmCategoryKeywords {
 			displayedtypes.add(typetext)
 			visitedtposmbrand.setBrand(displayedbrand)
 			_tposmdeployment.setTposmtype(typetext)
+			type.click()
 			// if data is not exists in excel against brand
 			if(expectedtposmbrand != null){
 				expectedtposmdeployments = expectedtposmbrand.getTposmdeployments()
 				boolean flag = false
 				//compare displayed tposm types with expected tposm types
-				for(int j=1; j<= expectedtposmdeployments.size(); j++) {
+				for(int j=0; j< expectedtposmdeployments.size(); j++) {
 					TposmDeployment tposmdeployment = expectedtposmdeployments.get(j)
 					String expectedtype = tposmdeployment.getTposmtype()
-					if(true){
+					if(expectedtype.equalsIgnoreCase(typetext)){
 						flag = true
-						type.click()
 						Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmRemarksScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM REMARK")
 						if(ProjectConstants.SCENARIO.equalsIgnoreCase("first visit")){
 							remark = tposmdeployment.getTposmremark()
@@ -206,13 +210,12 @@ public class TposmCategoryKeywords {
 							}
 						}
 						Mobile.pressBack()
-						Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+						Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 						break
 					}
 				}
 				if(flag == false){
 					if(ProjectConstants.SCENARIO.equalsIgnoreCase("first visit")){
-						type.click()
 						Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmRemarksScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM REMARK")
 						int totalremarks = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 						for(int k=1; k<= totalremarks; k++){
@@ -226,7 +229,6 @@ public class TposmCategoryKeywords {
 						}
 					}
 					else{
-						type.click()
 						Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmRemarksScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM REMARK")
 						int totalremarks = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 						for(int k=1; k<= totalremarks; k++){
@@ -240,12 +242,11 @@ public class TposmCategoryKeywords {
 						}
 					}
 					Mobile.pressBack()
-					Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+					Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 				}
 			}
 			else{
 				if(ProjectConstants.SCENARIO.equalsIgnoreCase("first visit")){
-					type.click()
 					Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmRemarksScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM REMARK")
 					int totalremarks = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 					for(int k=1; k<= totalremarks; k++){
@@ -259,7 +260,6 @@ public class TposmCategoryKeywords {
 					}
 				}
 				else{
-					type.click()
 					Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmRemarksScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM REMARK")
 					int totalremarks = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 					for(int k=1; k<= totalremarks; k++){
@@ -273,14 +273,15 @@ public class TposmCategoryKeywords {
 					}
 				}
 				Mobile.pressBack()
-				Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+				Mobile.verifyElementText(findTestObject("Object Repository/ShopOpen/TposmDeployment/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 			}
 			visitedtposm.add(_tposmdeployment)
 		}
 		visitedtposmbrand.setTposmdeployments(visitedtposm)
 		ArrayList<String> expectedtypes = new ArrayList<String>()
 		for(int i=0; i< expectedtposmdeployments.size(); i++){
-			TposmDeployment tposmdeployment = new TposmDeployment()
+			TposmDeployment tposmdeployment = expectedtposmdeployments.get(i)
+			String sample = tposmdeployment.getTposmtype()
 			expectedtypes.add(tposmdeployment.getTposmtype())
 		}
 		UnmatchedItems unmatcheditems = CompareDataKeywords.compareLists(expectedtypes, displayedtypes)

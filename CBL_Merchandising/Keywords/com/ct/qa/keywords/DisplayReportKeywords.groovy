@@ -57,7 +57,8 @@ public class DisplayReportKeywords {
 						String.format("%-30s%-100s", "",ProjectConstants.missingtposmcategories.getErrormessage_tposmtypes())
 			}
 		}
-		message = "\n\n---------------------------------------------Missing Shop Data-----------------------------------------------------------------------------------------------------\n\n"
+		message = "\n\n---------------------------------------------Missing Shop Data-----------------------------------------------------------------------------------------------------\n\n"+
+		"\n\n<------------------------------------------------------------------------------------------------------------------------------------------------------->\n\n"
 		for(int i=0; i<ProjectConstants.missingshopdatainfo.size(); i++){
 			boolean flag = false
 			MissingShopDataInfo missingshopdatainfo = ProjectConstants.missingshopdatainfo.get(i)
@@ -153,9 +154,9 @@ public class DisplayReportKeywords {
 									message = message+"\n"+missingcategorydata.getMissingitems_errormessage()
 								}
 							}
-							message = message + "\n\n" + String.format("%-60s%-30s","","-----------------------------------------------------------------------------","")+"\n\n"
+							message = message + "\n\n" + String.format("%-30s%-60s%-30s","","<---------------------------------------------------------------------->","")+"\n\n"
 						}
-						else if(missingcategorydata.getMaincategory().equalsIgnoreCase("Tposm Category")){
+						else if(missingcategorydata.getMaincategory().equalsIgnoreCase("TPOSM Deployment")){
 							if(missingcategorydata.getMissingsubcategories() != null){
 								if(flag == false){
 									message = message+"\n\n"+
@@ -204,7 +205,7 @@ public class DisplayReportKeywords {
 									message = message+"\n"+missingcategorydata.getMissingitems_errormessage()
 								}
 							}
-							message = message + "\n\n" + String.format("%-60s%-30s","","-----------------------------------------------------------------------------","")+"\n\n"
+							message = message + "\n\n" + String.format("%-30s%-60s%-30s","","<---------------------------------------------------------------------->","")+"\n\n"
 						}
 						else if(missingcategorydata.getMaincategory().equalsIgnoreCase("Survey") || missingcategorydata.getMaincategory().equalsIgnoreCase("Hot Zone") || missingcategorydata.getMaincategory().equalsIgnoreCase("Secondary Display")){
 							if(missingcategorydata.getMissingsubcategories() != null){
@@ -255,12 +256,12 @@ public class DisplayReportKeywords {
 									message = message+"\n"+missingcategorydata.getMissingitems_errormessage()
 								}
 							}
-							message = message + "\n\n" + String.format("%-60s%-30s","","-----------------------------------------------------------------------------","")+"\n\n"
+							message = message + "\n\n" + String.format("%-30s%-60s%-30s","","<---------------------------------------------------------------------->","")+"\n\n"
 						}
 					}
 				}
 				if(flag != false){
-					message = message+"\n\n<-------------------------------------------------------------------------------------------------------------------------------------->\n\n"
+					message = message+"\n\n<------------------------------------------------------------------------------------------------------------------------------------------------------->\n\n"
 					KeywordUtil.logInfo(message)
 					message = ""
 				}
@@ -339,17 +340,18 @@ public class DisplayReportKeywords {
 									String.format("%-35s%-25s","Share Of Shelf:",sos) + "\n" +
 									String.format("%-35s%-25s","Overwrite Share Of Shelf:",overwrite_sos)
 						}
-						else if(visitedcategorydata.getMaincategory().equalsIgnoreCase("Tposm Category")){
+						else if(visitedcategorydata.getMaincategory().equalsIgnoreCase("TPOSM Deployment")){
 							message = message+ "\n\n" +
 									String.format("%-30s%-130s", "Main Category:",visitedcategorydata.getMaincategory())+"\n\n"
 							ArrayList<TposmBrand> tposmbrands = visitedcategorydata.getTposmbrands()
 							for(int m=0; m< tposmbrands.size(); m++){
 								TposmBrand tposmbrand = tposmbrands.get(m)
 								message = message + String.format("%-30s%-130s","Brand",tposmbrand.getBrand())+"\n\n"+
-								String.format("%-30s%-30s%-30s%-30s%-30s","Tposm Type","Tposm Remark","Remark Value","Overwrite Tposm Remark","Overwrite Remark Value")
+										String.format("%-30s%-30s%-30s%-30s%-30s","Tposm Type","Tposm Remark","Remark Value","Overwrite Tposm Remark","Overwrite Remark Value")+"\n"
 								ArrayList<TposmDeployment> tposmdeployments = tposmbrand.getTposmdeployments()
 								for(int n=0; n< tposmdeployments.size(); n++){
 									TposmDeployment tposmdeployment = tposmdeployments.get(n)
+									message = message +
 									String.format("%-30s%-30s%-30s%-30s%-30s",tposmdeployment.getTposmtype(),tposmdeployment.getTposmremark(),tposmdeployment.getTposmremarkvalue(),tposmdeployment.getOverwrite_tposmremark(),tposmdeployment.getOverwrite_tposmremarkvalue())+"\n"
 								}
 							}

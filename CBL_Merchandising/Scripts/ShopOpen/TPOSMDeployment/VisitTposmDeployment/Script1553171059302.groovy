@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.verifyElementText(findTestObject('ShopOpen/TposmDeployment/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 
-    'TPSOM CATEGORY')
+    'TPOSM CATEGORY')
 
 CustomKeywords.'com.ct.qa.keywords.TposmCategoryKeywords.validateBrands'()
 
@@ -25,7 +25,8 @@ Mobile.tap(findTestObject('ShopOpen/TposmDeployment/FirstImage_Button', [('packa
 
 CustomKeywords.'com.ct.qa.keywords.CommonKeywords.takePicture'()
 
-Mobile.tap(findTestObject('ShopOpen/TposmDeployment/SecondImage_Button', [('package') : ProjectConstants.PACKAGENAME]), 0)
+Mobile.tap(findTestObject('ShopOpen/TposmDeployment/SecondImage_Button', [('package') : ProjectConstants.PACKAGENAME]), 
+    0)
 
 CustomKeywords.'com.ct.qa.keywords.CommonKeywords.takePicture'()
 

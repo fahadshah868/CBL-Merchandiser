@@ -60,9 +60,9 @@ Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_RouteInfoScre
 Mobile.tap(findTestObject('Attendence_Tposm/RouteInfoNextButton', [('package') : ProjectConstants.PACKAGENAME]), 0)
 
 Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 
-    'TPSOM CATEGORY')
+    'TPOSM CATEGORY')
 
-not_run: CustomKeywords.'com.ct.qa.keywords.Attendence_TposmKeywords.validateBrands'()
+CustomKeywords.'com.ct.qa.keywords.Attendence_TposmKeywords.validateBrands'()
 
 CustomKeywords.'com.ct.qa.keywords.Attendence_TposmKeywords.visitTposmCategories'()
 

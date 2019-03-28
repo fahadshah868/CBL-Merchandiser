@@ -6,6 +6,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.ct.qa.constants.ProjectConstants
+import com.ct.qa.struct.TposmBrand
 import com.ct.qa.struct.TposmDeployment
 import com.ct.qa.struct.UnmatchedItems
 import com.kms.katalon.core.annotation.Keyword
@@ -81,7 +82,7 @@ public class Attendence_TposmKeywords {
 	@Keyword
 	def visitTposmCategories(){
 		int index
-		ArrayList<String> brands = LoadDataKeywords.loadTposmDeploymentList("brand")
+		ArrayList<String> brands = LoadDataKeywords.loadTposmDeploymentList("brand","")
 		ArrayList<String> expectedbrands = new HashSet<String>(brands)
 		for(int j=0; j< expectedbrands.size(); j++){
 			Mobile.swipe(0, 100, 0, 500)
@@ -94,13 +95,13 @@ public class Attendence_TposmKeywords {
 				if(expectedbrands.get(j).equalsIgnoreCase(brandtext)){
 					brand_flag = true
 					brand.click()
-					Mobile.verifyElementText(findTestObject("Object Repository/Attendence_Tposm/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+					Mobile.verifyElementText(findTestObject("Object Repository/Attendence_Tposm/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 					if(j == 0){
 						validateTposmCategoryTypes()
 					}
 					visitTposmCategoryTypes(brandtext)
 					Mobile.tap(findTestObject("Object Repository/Attendence_Tposm/TposmCategory_ProceedButton", [('package') : ProjectConstants.PACKAGENAME]), 0)
-					Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPSOM CATEGORY')
+					Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPOSM CATEGORY')
 					break
 				}
 			}
@@ -119,13 +120,13 @@ public class Attendence_TposmKeywords {
 					else{
 						if(expectedbrands.get(j).equalsIgnoreCase(itemtextafterswipe)){
 							itemafterswipe.click()
-							Mobile.verifyElementText(findTestObject("Object Repository/Attendence_Tposm/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPSOM TYPE")
+							Mobile.verifyElementText(findTestObject("Object Repository/Attendence_Tposm/Validate_TposmTypeScreen", [('package') : ProjectConstants.PACKAGENAME]), "TPOSM TYPE")
 							if(j == 0){
 								validateTposmCategoryTypes()
 							}
 							visitTposmCategoryTypes(itemtextafterswipe)
 							Mobile.tap(findTestObject("Object Repository/Attendence_Tposm/TposmCategory_ProceedButton", [('package') : ProjectConstants.PACKAGENAME]), 0)
-							Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPSOM CATEGORY')
+							Mobile.verifyElementText(findTestObject('Attendence_Tposm/Validate_TposmCategoryScreen', [('package') : ProjectConstants.PACKAGENAME]), 'TPOSM CATEGORY')
 							break
 						}
 					}
@@ -174,20 +175,20 @@ public class Attendence_TposmKeywords {
 	def visitTposmCategoryTypes(String brand){
 		Mobile.swipe(0, 100, 0, 500)
 		Mobile.swipe(0, 100, 0, 500)
-		ArrayList<TposmDeployment> tposmdeployments = LoadDataKeywords.loadTposmDeploymentList("all")
+		TposmBrand tposmbrand = LoadDataKeywords.loadTposmDeploymentList("all",brand)
+		ArrayList<TposmDeployment> tposmdeployments = tposmbrand.getTposmdeployments()
 		int totaltypes = driver.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
 		for(int i=0; i< tposmdeployments.size(); i++){
 			TposmDeployment tposmdeployment = tposmdeployments.get(i)
-			if(tposmdeployment.getBrand().equalsIgnoreCase(brand)){
-				for(int j=1; j<= totaltypes; j++){
-					MobileElement type = driver.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+j+"]/android.widget.TextView[1]")
-					String typetext = type.getText()
-					MobileElement tposm_textfield = driver.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+j+"]/android.widget.EditText[1]")
-					if(typetext.equalsIgnoreCase(tposmdeployment.getTposmtype())){
-						tposm_textfield.setValue(tposmdeployment.getTposmvalue())
-						Mobile.hideKeyboard()
-						break
-					}
+
+			for(int j=1; j<= totaltypes; j++){
+				MobileElement type = driver.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+j+"]/android.widget.TextView[1]")
+				String typetext = type.getText()
+				MobileElement tposm_textfield = driver.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+j+"]/android.widget.EditText[1]")
+				if(typetext.equalsIgnoreCase(tposmdeployment.getTposmtype())){
+					tposm_textfield.setValue(tposmdeployment.getTposmvalue())
+					Mobile.hideKeyboard()
+					break
 				}
 			}
 		}

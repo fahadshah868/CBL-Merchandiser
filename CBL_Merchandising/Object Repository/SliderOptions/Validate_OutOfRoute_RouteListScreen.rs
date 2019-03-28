@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and @instance = '2' and (text() = 'Route LIST' or . = 'Route LIST') and @resource-id = '${package}:id/header_text_id']</value>
+         <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.TextView[1][count(. | //*[@class = 'android.widget.TextView' and @instance = '2' and (text() = 'Route LIST' or . = 'Route LIST') and @resource-id = '${package}:id/header_text_id']) = count(//*[@class = 'android.widget.TextView' and @instance = '2' and (text() = 'Route LIST' or . = 'Route LIST') and @resource-id = '${package}:id/header_text_id'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -146,10 +146,10 @@
       <value>26</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>Validate_OutOfRoute_RouteListScreen</value>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.TextView[1]</value>
    </webElementProperties>
 </WebElementEntity>
