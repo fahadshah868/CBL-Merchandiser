@@ -236,15 +236,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Closed  ==>  Shop Open")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -265,23 +256,14 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open  ==>  Shop Closed")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 			}
-			//SKDNA to SKDNA
+			//RDNA to RDNA
 			else if(i == 3){
-				Mobile.callTestCase(findTestCase("RetailerDidNotAllow/OverwriteRetailerDidNotAllow"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/RetailerDidNotAllow/OverwriteRetailerDidNotAllow"), null)
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 				for(int j=0; j<ProjectConstants.missingshopdatainfo.size(); j++){
 					if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
@@ -293,16 +275,7 @@ public class ShopVisitingScenariosKeywords{
 				for(int j=0; j<ProjectConstants.visitedshopdatainfo.size(); j++){
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
-						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("SKDNA with 'Expiry Issue' remark  ==>  SKDNA with 'Others' remark")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
+						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("RDNA with 'Permission Issues' remark  ==>  RDNA with 'Market Issues' remark")
 						break
 					}
 				}
@@ -323,15 +296,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Permanently Closed  ==>  Shop Not Found")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -352,15 +316,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Closed  ==>  Shop Permanently Closed")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -371,7 +326,7 @@ public class ShopVisitingScenariosKeywords{
 				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/VisitShopOpen"), null)
 				ProjectConstants.SCENARIO = "overwrite"
 				ProjectConstants.SHOP_ATTEMPT = 1
-				Mobile.callTestCase(findTestCase("ShopOpen/VisitCategoryScenarios/VisitShopCategoriesWithOverwritingScenarios"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/VisitShopScenarios/VisitShopsWithCategoryLevelOverwritingScenarios"), null)
 				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/SaveShop"), null)
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 				for(int j=0; j<ProjectConstants.missingshopdatainfo.size(); j++){
@@ -386,15 +341,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open  ==>  Shop Open")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -450,15 +396,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Closed  ==>  Shop Open")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -485,26 +422,17 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open  ==>  Shop Closed")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 			}
-			//SKDNA to SKDNA
+			//RDNA to RDNA
 			else if(i == 3){
-				Mobile.callTestCase(findTestCase("RetailerDidNotAllow/VisitRetailerDidNotAllow"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/RetailerDidNotAllow/VisitRetailerDidNotAllow"), null)
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 				findShop(ProjectConstants.CURRENTVISITING_SHOPNAME)
-				Mobile.callTestCase(findTestCase("RetailerDidNotAllow/OverwriteRetailerDidNotAllow"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/RetailerDidNotAllow/OverwriteRetailerDidNotAllow"), null)
 				Mobile.verifyElementExist(findTestObject("Object Repository/Validate_ShopListScreen" , [('package') : ProjectConstants.PACKAGENAME]), 0)
 				for(int j=0; j<ProjectConstants.missingshopdatainfo.size(); j++){
 					if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
@@ -516,16 +444,7 @@ public class ShopVisitingScenariosKeywords{
 				for(int j=0; j<ProjectConstants.visitedshopdatainfo.size(); j++){
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
-						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("SKDNA with 'Expiry Issue' remark  ==>  SKDNA with 'Others' remark")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
+						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("RDNA with 'Permission Issues' remark  ==>  RDNA with 'Market Issues' remark")
 						break
 					}
 				}
@@ -549,15 +468,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Permanently Closed  ==>  Shop Not Found")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -581,15 +491,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Closed  ==>  Shop Permanently Closed")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -621,15 +522,6 @@ public class ShopVisitingScenariosKeywords{
 					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open  ==>  Shop Open")
-						String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-								String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-								String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-								String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-								String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 						break
 					}
 				}
@@ -678,7 +570,7 @@ public class ShopVisitingScenariosKeywords{
 			for(int j=0; j<ProjectConstants.missingshopdatainfo.size(); j++){
 				if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					ProjectConstants.missingshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
-					ProjectConstants.missingshopdatainfo.get(j).setScenario("Data Verification")
+					ProjectConstants.missingshopdatainfo.get(j).setScenario("Category Level Overwriting")
 					break
 				}
 			}
@@ -686,15 +578,6 @@ public class ShopVisitingScenariosKeywords{
 				if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 					ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open")
-					String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-							String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-							String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-							String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-							String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-							String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-							String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-							String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-					ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 					break
 				}
 			}
@@ -746,16 +629,6 @@ public class ShopVisitingScenariosKeywords{
 		//					if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 		//						ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 		//						ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open")
-		//						String message = "'Scenario given bellow' for chiller utilization\n"+
-		//								String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-		//										String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-		//										String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-		//										String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-		//										String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-		//										String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-		//										String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-		//										String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-		//						ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 		//						break
 		//					}
 		//				}
@@ -769,7 +642,7 @@ public class ShopVisitingScenariosKeywords{
 		int index = 0
 		int _shop = 1
 		int totalshops = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.ListView[1]/*").size()
-		for(_shop; _shop<= 6; _shop++){
+		for(_shop; _shop<= 1; _shop++){
 			MissingShopDataInfo missingshopdatainfo = new MissingShopDataInfo()
 			VisitedShopDataInfo visitedshopdatainfo = new VisitedShopDataInfo()
 			MobileElement shop = ProjectConstants.DRIVER.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+_shop+"]/android.widget.TextView[1]")
@@ -798,7 +671,7 @@ public class ShopVisitingScenariosKeywords{
 			for(int j=0; j<ProjectConstants.missingshopdatainfo.size(); j++){
 				if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					ProjectConstants.missingshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
-					ProjectConstants.missingshopdatainfo.get(j).setScenario("Data Verification")
+					ProjectConstants.missingshopdatainfo.get(j).setScenario("Category Level Overwriting")
 					break
 				}
 			}
@@ -806,15 +679,6 @@ public class ShopVisitingScenariosKeywords{
 				if(ProjectConstants.visitedshopdatainfo.get(j).getShopname().equals(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					ProjectConstants.visitedshopdatainfo.get(j).setShopchannel(ProjectConstants.CURRENTVISITING_SHOPCHANNEL)
 					ProjectConstants.visitedshopdatainfo.get(j).setShop_scenario("Shop Open")
-					String message = "(1) 'RTM visit frequency' with 'Once a week'\n"+
-							String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-							String.format("%-44s%-100s","","'Retailer Remarks' with 'OB not visiting' remark")+"\n"+
-							String.format("%-44s%-100s","","'Hanger Availability' with 'Yes' remark")+"\n"+
-							String.format("%-40s%-100s","","(2) 'RTM visit frequency' with 'Twice a week'")+"\n"+
-							String.format("%-44s%-100s","","'Pop Application' with 'No' remark")+"\n"+
-							String.format("%-44s%-100s","","'Retailer Remarks' with 'SM not visiting' remark")+"\n"+
-							String.format("%-44s%-100s","","'Hanger Availability' with 'No' remark")
-					ProjectConstants.visitedshopdatainfo.get(j).setOthercategories_scenarios(message)
 					break
 				}
 			}

@@ -11,7 +11,7 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>b9d1b4e0-a9dd-4488-91b6-f455213ee42b</testSuiteGuid>
    <testCaseLink>
-      <guid>be68e7bb-0f96-4c0d-a684-97c2c6adc2e0</guid>
+      <guid>a4f73618-b2cc-4b7f-9602-d0484fdec905</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/LaunchingApp/LaunchApp</testCaseId>
@@ -23,21 +23,27 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8fea2548-849c-451c-8df3-986197cdd96d</guid>
+      <guid>9cd5b16e-a28b-45c2-bdf6-73401eb65c6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SliderOptions/VisitSliderOptions</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>49381d56-201f-4d41-b1fe-d4bef0fe285a</guid>
+      <guid>adef046a-59cb-49c7-9f8d-85409a370a53</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Attendence/VisitAttendance</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3d3cefc4-9bf6-4078-82f1-fc2b436349d5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VisitShopScenarios/VisitShopsWithCategoryLevelOverwritingScenarios</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fab8e824-91f6-467c-b351-427ee7b5fb63</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/VisitShopScenarios/VisitShopsWithCategoryLevelOverwriteScenarios</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d24dbc07-ac24-469b-8853-7038b4bc31af</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/VisitShopScenarios/VisitShopsWithCategoryLevelOverwritingScenarios</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -2,8 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.ct.qa.constants.ProjectConstants
+import com.ct.qa.constants.ProjectConstants as ProjectConstants
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -20,5 +19,5 @@ MobileBuiltInKeywords.verifyElementExist(findTestObject('ShopOpen/Validate_ShopC
     0)
 
 'visit shop categories for data verification'
-CustomKeywords.'com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithOverwriteScenarios'()
+CustomKeywords.'com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithOverwritingScenarios'()
 

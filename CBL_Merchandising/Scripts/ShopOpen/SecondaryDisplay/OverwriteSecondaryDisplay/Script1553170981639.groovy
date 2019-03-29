@@ -13,3 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+Mobile.verifyElementText(findTestObject('ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen', [('package') : ProjectConstants.PACKAGENAME]), 
+    'Secondary Display')
+
+CustomKeywords.'com.ct.qa.keywords.SecondaryDisplayKeywords.overwriteSecondaryDisplayQuestions'()
+
+Mobile.tap(findTestObject('ShopOpen/HotZone/PlanogramButton', [('package') : ProjectConstants.PACKAGENAME]), 0)
+
+CustomKeywords.'com.ct.qa.keywords.CommonKeywords.visitPlanogramCloseButton'()
+
+Mobile.verifyElementText(findTestObject('ShopOpen/SecondaryDisplay/Validate_SecondaryDisplayScreen', [('package') : ProjectConstants.PACKAGENAME]), 
+    'Secondary Display')
+
+Mobile.tap(findTestObject('ShopOpen/HotZone/SubmitButton', [('package') : ProjectConstants.PACKAGENAME]), 0)
+
