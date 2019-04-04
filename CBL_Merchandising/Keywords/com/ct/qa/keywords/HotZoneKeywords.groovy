@@ -28,6 +28,7 @@ public class HotZoneKeywords {
 
 	@Keyword
 	def visitHotZoneQuestions(){
+		ProjectConstants.CURRENTVISITING_SUBCATEGORY = ""
 		ArrayList<String> unmatchedquestions = new ArrayList<String>()
 		ArrayList<QuestionData> visitedquestions = new ArrayList<QuestionData>()
 		ArrayList<QuestionData> expectedquestions = LoadDataKeywords.loadHotZoneQuestionsList()
@@ -94,7 +95,7 @@ public class HotZoneKeywords {
 				if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					MissingCategoryData missingcategory = new MissingCategoryData()
 					missingcategory.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
-					missingcategory.setSubcategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
+					missingcategory.setSubcategory("")
 					missingcategory.setMissingitems(unmatchedquestions)
 					missingcategory.setMissingitems_errormessage(ProjectConstants.MESSAGEFOR_ITEMSARE_NOTMATCH)
 					ProjectConstants.missingshopdatainfo.get(j).setMissingCategoriesData(missingcategory)
@@ -122,7 +123,7 @@ public class HotZoneKeywords {
 									CategoryWithProducts ex_categorywithproduct = ex_categorywithproducts.get(k)
 									if(ex_categorywithproduct.getCategory().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SUBCATEGORY)){
 										categorywithproduct_flag = true
-										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getSurveyquestions()
+										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getQuestions()
 										for(int m=0; m< ex_qauestionsdata.size(); m++){
 											QuestionData ex_qauestiondata = ex_qauestionsdata.get(m)
 											for(int n=0; n< visitedquestions.size(); n++){
@@ -147,7 +148,7 @@ public class HotZoneKeywords {
 								if(categorywithproduct_flag == false){
 									CategoryWithProducts categoryproduct = new CategoryWithProducts()
 									categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-									categoryproduct.setSurveyquestions(visitedquestions)
+									categoryproduct.setQuestions(visitedquestions)
 									ex_visitedcategory.setCategorywithproducts(categoryproduct)
 									break
 								}
@@ -155,7 +156,7 @@ public class HotZoneKeywords {
 							else{
 								CategoryWithProducts categoryproduct = new CategoryWithProducts()
 								categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-								categoryproduct.setSurveyquestions(visitedquestions)
+								categoryproduct.setQuestions(visitedquestions)
 								ex_visitedcategory.setCategorywithproducts(categoryproduct)
 								break
 							}
@@ -165,7 +166,7 @@ public class HotZoneKeywords {
 						VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 						CategoryWithProducts categoryproduct = new CategoryWithProducts()
 						categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-						categoryproduct.setSurveyquestions(visitedquestions)
+						categoryproduct.setQuestions(visitedquestions)
 						visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 						visitedcategorydata.setCategorywithproducts(categoryproduct)
 						ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -176,7 +177,7 @@ public class HotZoneKeywords {
 					VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 					CategoryWithProducts categoryproduct = new CategoryWithProducts()
 					categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-					categoryproduct.setSurveyquestions(visitedquestions)
+					categoryproduct.setQuestions(visitedquestions)
 					visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 					visitedcategorydata.setCategorywithproducts(categoryproduct)
 					ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -187,6 +188,7 @@ public class HotZoneKeywords {
 	}
 	@Keyword
 	def overwriteHotZoneQuestions(){
+		ProjectConstants.CURRENTVISITING_SUBCATEGORY = ""
 		ArrayList<String> unmatchedquestions = new ArrayList<String>()
 		ArrayList<QuestionData> visitedquestions = new ArrayList<QuestionData>()
 		ArrayList<QuestionData> expectedquestions = LoadDataKeywords.loadHotZoneQuestionsList()
@@ -261,7 +263,7 @@ public class HotZoneKeywords {
 				if(ProjectConstants.missingshopdatainfo.get(j).getShopname().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SHOPNAME)) {
 					MissingCategoryData missingcategory = new MissingCategoryData()
 					missingcategory.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
-					missingcategory.setSubcategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
+					missingcategory.setSubcategory("")
 					missingcategory.setMissingitems(unmatchedquestions)
 					missingcategory.setMissingitems_errormessage(ProjectConstants.MESSAGEFOR_ITEMSARE_NOTMATCH)
 					ProjectConstants.missingshopdatainfo.get(j).setMissingCategoriesData(missingcategory)
@@ -289,7 +291,7 @@ public class HotZoneKeywords {
 									CategoryWithProducts ex_categorywithproduct = ex_categorywithproducts.get(k)
 									if(ex_categorywithproduct.getCategory().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SUBCATEGORY)){
 										categorywithproduct_flag = true
-										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getSurveyquestions()
+										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getQuestions()
 										for(int m=0; m< ex_qauestionsdata.size(); m++){
 											QuestionData ex_qauestiondata = ex_qauestionsdata.get(m)
 											for(int n=0; n< visitedquestions.size(); n++){
@@ -314,7 +316,7 @@ public class HotZoneKeywords {
 								if(categorywithproduct_flag == false){
 									CategoryWithProducts categoryproduct = new CategoryWithProducts()
 									categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-									categoryproduct.setSurveyquestions(visitedquestions)
+									categoryproduct.setQuestions(visitedquestions)
 									ex_visitedcategory.setCategorywithproducts(categoryproduct)
 									break
 								}
@@ -322,7 +324,7 @@ public class HotZoneKeywords {
 							else{
 								CategoryWithProducts categoryproduct = new CategoryWithProducts()
 								categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-								categoryproduct.setSurveyquestions(visitedquestions)
+								categoryproduct.setQuestions(visitedquestions)
 								ex_visitedcategory.setCategorywithproducts(categoryproduct)
 								break
 							}
@@ -332,7 +334,7 @@ public class HotZoneKeywords {
 						VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 						CategoryWithProducts categoryproduct = new CategoryWithProducts()
 						categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-						categoryproduct.setSurveyquestions(visitedquestions)
+						categoryproduct.setQuestions(visitedquestions)
 						visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 						visitedcategorydata.setCategorywithproducts(categoryproduct)
 						ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -343,7 +345,7 @@ public class HotZoneKeywords {
 					VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 					CategoryWithProducts categoryproduct = new CategoryWithProducts()
 					categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-					categoryproduct.setSurveyquestions(visitedquestions)
+					categoryproduct.setQuestions(visitedquestions)
 					visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 					visitedcategorydata.setCategorywithproducts(categoryproduct)
 					ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)

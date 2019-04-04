@@ -43,7 +43,7 @@ public class CategoryVisitingScenariosWithOverwritePopUpKeywords{
 		Mobile.swipe(0, 200, 0, 750)
 		int index = 0
 		int totalcategories = ProjectConstants.DRIVER.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/*").size()
-		for(int i=1; i<= totalcategories; i++){
+		for(int i=3; i<= 3; i++){
 			MobileElement category = ProjectConstants.DRIVER.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+i+"]/android.widget.TextView[1]")
 			String categoryname = category.getText()
 			if(categoryname.equalsIgnoreCase("Brand Availability")){
@@ -62,7 +62,7 @@ public class CategoryVisitingScenariosWithOverwritePopUpKeywords{
 				ProjectConstants.CURRENTVISITING_MAINCATEGORY = categoryname
 				ProjectConstants.DRIVER.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+i+"]").click()
 				CommonKeywords.takePicture()
-				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/PrimaryShelf/VisitPrimaryShelf"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/PrimaryShelf/OverwritePrimaryShelf"), null)
 			}
 			else if(categoryname.equalsIgnoreCase("Hot Zone")){
 				ProjectConstants.CURRENTVISITING_MAINCATEGORY = categoryname
@@ -72,7 +72,7 @@ public class CategoryVisitingScenariosWithOverwritePopUpKeywords{
 			else if(categoryname.equalsIgnoreCase("Secondary Display")){
 				ProjectConstants.CURRENTVISITING_MAINCATEGORY = categoryname
 				ProjectConstants.DRIVER.findElementByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout["+i+"]").click()
-				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/SecondaryDisplay/VisitSecondaryDisplay"), null)
+				Mobile.callTestCase(findTestCase("Test Cases/ShopOpen/SecondaryDisplay/OverwriteSecondaryDisplay"), null)
 			}
 			else if(categoryname.equalsIgnoreCase("TPOSM Deployment")){
 				ProjectConstants.CURRENTVISITING_MAINCATEGORY = categoryname

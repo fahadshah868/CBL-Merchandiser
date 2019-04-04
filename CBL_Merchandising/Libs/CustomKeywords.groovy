@@ -62,6 +62,10 @@ def static "com.ct.qa.keywords.PrimaryShelfKeywords.visitPrimaryShelf"() {
     (new com.ct.qa.keywords.PrimaryShelfKeywords()).visitPrimaryShelf()
 }
 
+def static "com.ct.qa.keywords.PrimaryShelfKeywords.overwritePrimaryShelf"() {
+    (new com.ct.qa.keywords.PrimaryShelfKeywords()).overwritePrimaryShelf()
+}
+
 def static "com.ct.qa.keywords.SurveyKeywords.visitQuestionCategories"(
     	int flag	) {
     (new com.ct.qa.keywords.SurveyKeywords()).visitQuestionCategories(
@@ -98,6 +102,10 @@ def static "com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCatego
     (new com.ct.qa.keywords.CategoryVisitingScenariosKeywords()).visitShopCategoriesWithDataVerification()
 }
 
+def static "com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithOverwriteScenarios"() {
+    (new com.ct.qa.keywords.CategoryVisitingScenariosKeywords()).visitShopCategoriesWithOverwriteScenarios()
+}
+
 def static "com.ct.qa.keywords.CategoryVisitingScenariosKeywords.visitShopCategoriesWithOverwritingScenarios"() {
     (new com.ct.qa.keywords.CategoryVisitingScenariosKeywords()).visitShopCategoriesWithOverwritingScenarios()
 }
@@ -130,6 +138,10 @@ def static "com.ct.qa.keywords.SecondaryDisplayKeywords.overwriteSecondaryDispla
 
 def static "com.ct.qa.keywords.CategoryVisitingScenariosWithOverwritePopUpKeywords.visitShopCategoriesWithOverwritingScenarios"() {
     (new com.ct.qa.keywords.CategoryVisitingScenariosWithOverwritePopUpKeywords()).visitShopCategoriesWithOverwritingScenarios()
+}
+
+def static "com.ct.qa.keywords.Attendence_TposmKeywords.printTposmReport"() {
+    (new com.ct.qa.keywords.Attendence_TposmKeywords()).printTposmReport()
 }
 
 def static "com.ct.qa.keywords.Attendence_TposmKeywords.visitAttendance"() {

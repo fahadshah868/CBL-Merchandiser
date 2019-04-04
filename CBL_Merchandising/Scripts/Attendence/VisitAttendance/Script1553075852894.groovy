@@ -73,5 +73,5 @@ Mobile.tap(findTestObject('Attendence_Tposm/TposmCategory_ProceedButton', [('pac
 Mobile.verifyElementText(findTestObject('DashboardScreenElements/Validate_DashboardScreen', [('package') : ProjectConstants.PACKAGENAME]), 
     'Dashboard')
 
-CustomKeywords.'com.ct.qa.keywords.DisplayReportKeywords.displayDataInReport'()
+CustomKeywords.'com.ct.qa.keywords.Attendence_TposmKeywords.printTposmReport'()
 

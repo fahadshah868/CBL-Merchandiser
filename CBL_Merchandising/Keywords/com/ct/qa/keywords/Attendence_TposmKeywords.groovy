@@ -27,7 +27,31 @@ import io.appium.java_client.MobileElement
 public class Attendence_TposmKeywords {
 
 	AppiumDriver<MobileElement> driver = ProjectConstants.DRIVER;
-
+	
+	@Keyword
+	def printTposmReport(){
+		String message = "\n\n---------------------------------------------Missing Tposm Category Data-----------------------------------------------------------------------------------------------------\n\n"
+		if(ProjectConstants.missingtposmcategories.getBrands() != null || ProjectConstants.missingtposmcategories.getTposmtypes() != null){
+			if(ProjectConstants.missingtposmcategories.getBrands() != null){
+				message = message + "\n\n" +
+						String.format("%-30s","Missing Brands:")
+				for(int i=0; i< ProjectConstants.missingtposmcategories.getBrands().size(); i++){
+					message = message + ProjectConstants.missingtposmcategories.getBrands().get(i) +" , "
+				}
+				message = message + "\n" +
+						String.format("%-30s%-100s", "",ProjectConstants.missingtposmcategories.getErrormessage_brands())
+			}
+			if(ProjectConstants.missingtposmcategories.getTposmtypes() != null){
+				message = message + "\n\n" +
+						String.format("%-30s","Missing TPOSM Types:")
+				for(int i=0; i< ProjectConstants.missingtposmcategories.getTposmtypes().size(); i++){
+					message = message + ProjectConstants.missingtposmcategories.getTposmtypes().get(i) + " , "
+				}
+				message = message + "\n" +
+						String.format("%-30s%-100s", "",ProjectConstants.missingtposmcategories.getErrormessage_tposmtypes())
+			}
+		}
+	}
 	@Keyword
 	def visitAttendance(){
 		int attendance_remarks = driver.findElementsByXPath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RadioGroup[1]/*").size()

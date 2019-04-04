@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>MMA Plus Merchandising With Category Level Overwrite Scenarios</name>
+   <name>CBL Merchandising With Category Level Overwrite Scenarios</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -25,19 +25,19 @@
    <testCaseLink>
       <guid>9cd5b16e-a28b-45c2-bdf6-73401eb65c6b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SliderOptions/VisitSliderOptions</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>adef046a-59cb-49c7-9f8d-85409a370a53</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Attendence/VisitAttendance</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3d3cefc4-9bf6-4078-82f1-fc2b436349d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VisitShopScenarios/VisitShopsWithCategoryLevelOverwritingScenarios</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -23,7 +23,7 @@ import internal.GlobalVariable
 public class CategoryWithProducts {
 	public String category
 	public ArrayList<ProductData> productsdata
-	public ArrayList<QuestionData> surveyquestions
+	public ArrayList<QuestionData> questions
 	public String getCategory() {
 		return category;
 	}
@@ -36,10 +36,11 @@ public class CategoryWithProducts {
 	public void setProductsdata(ArrayList<ProductData> productsdata) {
 		this.productsdata = productsdata;
 	}
-	public ArrayList<QuestionData> getSurveyquestions() {
-		return surveyquestions;
+	public ArrayList<QuestionData> getQuestions() {
+		return questions;
 	}
-	public void setSurveyquestions(ArrayList<QuestionData> surveyquestions) {
-		this.surveyquestions = surveyquestions;
+	public void setQuestions(ArrayList<QuestionData> questions) {
+		this.questions = questions;
 	}
+	
 }

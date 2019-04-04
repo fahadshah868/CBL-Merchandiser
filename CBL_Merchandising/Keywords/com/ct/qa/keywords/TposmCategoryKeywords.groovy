@@ -361,16 +361,15 @@ public class TposmCategoryKeywords {
 														ex_tposmdeployment.setOverwrite_tposmremark(ds_tposmdeployment.getOverwrite_tposmremark())
 														ex_tposmdeployment.setOverwrite_tposmremarkvalue(ds_tposmdeployment.getOverwrite_tposmremarkvalue())
 													}
+													break
 												}
 											}
 										}
+										break
 									}
 								}
 								if(tposmbrand_flag == false){
-									VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
-									visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
-									visitedcategorydata.setTposmbrands(visitedtposmbrand)
-									ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
+									ex_visitedcategory.setTposmbrands(visitedtposmbrand)
 									break
 								}
 							}

@@ -288,7 +288,7 @@ public class SurveyKeywords {
 									CategoryWithProducts ex_categorywithproduct = ex_categorywithproducts.get(k)
 									if(ex_categorywithproduct.getCategory().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SUBCATEGORY)){
 										categorywithproduct_flag = true
-										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getSurveyquestions()
+										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getQuestions()
 										for(int m=0; m< ex_qauestionsdata.size(); m++){
 											QuestionData ex_qauestiondata = ex_qauestionsdata.get(m)
 											for(int n=0; n< visitedquestions.size(); n++){
@@ -313,7 +313,7 @@ public class SurveyKeywords {
 								if(categorywithproduct_flag == false){
 									CategoryWithProducts categoryproduct = new CategoryWithProducts()
 									categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-									categoryproduct.setSurveyquestions(visitedquestions)
+									categoryproduct.setQuestions(visitedquestions)
 									ex_visitedcategory.setCategorywithproducts(categoryproduct)
 									break
 								}
@@ -321,7 +321,7 @@ public class SurveyKeywords {
 							else{
 								CategoryWithProducts categoryproduct = new CategoryWithProducts()
 								categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-								categoryproduct.setSurveyquestions(visitedquestions)
+								categoryproduct.setQuestions(visitedquestions)
 								ex_visitedcategory.setCategorywithproducts(categoryproduct)
 								break
 							}
@@ -331,7 +331,7 @@ public class SurveyKeywords {
 						VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 						CategoryWithProducts categoryproduct = new CategoryWithProducts()
 						categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-						categoryproduct.setSurveyquestions(visitedquestions)
+						categoryproduct.setQuestions(visitedquestions)
 						visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 						visitedcategorydata.setCategorywithproducts(categoryproduct)
 						ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -342,7 +342,7 @@ public class SurveyKeywords {
 					VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 					CategoryWithProducts categoryproduct = new CategoryWithProducts()
 					categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-					categoryproduct.setSurveyquestions(visitedquestions)
+					categoryproduct.setQuestions(visitedquestions)
 					visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 					visitedcategorydata.setCategorywithproducts(categoryproduct)
 					ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -548,7 +548,7 @@ public class SurveyKeywords {
 									CategoryWithProducts ex_categorywithproduct = ex_categorywithproducts.get(k)
 									if(ex_categorywithproduct.getCategory().equalsIgnoreCase(ProjectConstants.CURRENTVISITING_SUBCATEGORY)){
 										categorywithproduct_flag = true
-										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getSurveyquestions()
+										ArrayList<QuestionData> ex_qauestionsdata = ex_categorywithproduct.getQuestions()
 										for(int m=0; m< ex_qauestionsdata.size(); m++){
 											QuestionData ex_qauestiondata = ex_qauestionsdata.get(m)
 											for(int n=0; n< visitedquestions.size(); n++){
@@ -573,7 +573,7 @@ public class SurveyKeywords {
 								if(categorywithproduct_flag == false){
 									CategoryWithProducts categoryproduct = new CategoryWithProducts()
 									categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-									categoryproduct.setSurveyquestions(visitedquestions)
+									categoryproduct.setQuestions(visitedquestions)
 									ex_visitedcategory.setCategorywithproducts(categoryproduct)
 									break
 								}
@@ -581,7 +581,7 @@ public class SurveyKeywords {
 							else{
 								CategoryWithProducts categoryproduct = new CategoryWithProducts()
 								categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-								categoryproduct.setSurveyquestions(visitedquestions)
+								categoryproduct.setQuestions(visitedquestions)
 								ex_visitedcategory.setCategorywithproducts(categoryproduct)
 								break
 							}
@@ -591,7 +591,7 @@ public class SurveyKeywords {
 						VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 						CategoryWithProducts categoryproduct = new CategoryWithProducts()
 						categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-						categoryproduct.setSurveyquestions(visitedquestions)
+						categoryproduct.setQuestions(visitedquestions)
 						visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 						visitedcategorydata.setCategorywithproducts(categoryproduct)
 						ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
@@ -602,7 +602,7 @@ public class SurveyKeywords {
 					VisitedCategoryData visitedcategorydata = new VisitedCategoryData()
 					CategoryWithProducts categoryproduct = new CategoryWithProducts()
 					categoryproduct.setCategory(ProjectConstants.CURRENTVISITING_SUBCATEGORY)
-					categoryproduct.setSurveyquestions(visitedquestions)
+					categoryproduct.setQuestions(visitedquestions)
 					visitedcategorydata.setMaincategory(ProjectConstants.CURRENTVISITING_MAINCATEGORY)
 					visitedcategorydata.setCategorywithproducts(categoryproduct)
 					ProjectConstants.visitedshopdatainfo.get(j).setVisitedcategoriesdata(visitedcategorydata)
